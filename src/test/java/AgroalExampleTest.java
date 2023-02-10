@@ -28,13 +28,19 @@ public class AgroalExampleTest {
             }
 
 
-        System.out.println("####################################### active count: "+dataSource.getMetrics().activeCount());
-        System.out.println("####################################### available count: "+dataSource.getMetrics().availableCount());
+        Long activeCount = dataSource.getMetrics().activeCount();
+        Long availableCount = dataSource.getMetrics().availableCount();
+        System.out.println("####################################### active count: "+ activeCount);
+        System.out.println("####################################### available count: "+availableCount);
 
         Thread.sleep(1000 * 60);
-        System.out.println("####################################### active count: "+dataSource.getMetrics().activeCount());
-        System.out.println("####################################### available count: "+dataSource.getMetrics().availableCount());
-
+        activeCount = dataSource.getMetrics().activeCount();
+        availableCount = dataSource.getMetrics().availableCount();
+        System.out.println("####################################### active count: "+ activeCount);
+        System.out.println("####################################### available count: "+availableCount);
+        statement.close();
+        resultSet.close();
+        connection.close();
         assertTrue(0 == dataSource.getMetrics().availableCount());
     }
 }
