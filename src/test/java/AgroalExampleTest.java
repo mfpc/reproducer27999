@@ -41,6 +41,6 @@ public class AgroalExampleTest {
         statement.close();
         resultSet.close();
         connection.close();
-        assertTrue(0 == dataSource.getMetrics().availableCount());
+        assertTrue(0 == availableCount);
     }
 }

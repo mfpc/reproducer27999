@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: AgroalExampleTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 66.861 s - in AgroalExampleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 67.422 s - in AgroalExampleTest
